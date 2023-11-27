@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Fashion Store | Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<style>
+    button:hover{
+        background-color: #007bff;
+    }
+    a{
+            text-decoration: none;
+            color: #fff;
+        }
+</style>
+<body>
+<div class="container">
+    <form action="Main.html" method="post">
+        <h2>Create a New Account</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+
+       <!--<<a href="Main.html" type="submit"><div class="login"><span>Sign Up</span></div></a>-->
+
+       <div class="login">
+        <button type="button" id="loginButton">Sign Up</button>
+    </div>
+    
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            // Assuming you have an email and password input in your form
+            var emailInput = document.getElementById('email');
+            var passwordInput = document.getElementById('password');
+    
+            if (emailInput.value && passwordInput.value) {
+                // Both email and password are filled, redirect to the main page
+                window.location.href = 'Main.html';
+            } else {
+                // Display an error message or take appropriate action
+                alert('Please fill out all fields');
+            }
+        });
+    </script>
+    </form>
+</div>
+
+</body>
+</html>
