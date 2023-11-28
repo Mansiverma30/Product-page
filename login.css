@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    /*background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);*/
-    background-image: url("login.jpg");
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+  /* background-image: url("login.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     margin: 0;
     display: flex;
     justify-content: center;
